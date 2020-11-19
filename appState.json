@@ -1,0 +1,72 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "e9f55f21-06c8-46fa-8880-f4dd4cc079a0": {
+        "id": "e9f55f21-06c8-46fa-8880-f4dd4cc079a0",
+        "parent": null,
+        "name": "sample-induu.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sample-induu.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "sampleInduu"
+        },
+        "triggers": [],
+        "lastUpdated": 1605774193796
+      }
+    },
+    "openFiles": [
+      "e9f55f21-06c8-46fa-8880-f4dd4cc079a0"
+    ],
+    "currentFileId": "e9f55f21-06c8-46fa-8880-f4dd4cc079a0",
+    "resources": {},
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "sample-induu",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1605774218937
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sample-induu",
+      "url": "https://github.com/Indunil1992/sample-induu"
+    }
+  }
+}
