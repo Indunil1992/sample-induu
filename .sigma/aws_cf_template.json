@@ -12,6 +12,10 @@
     }
   },
   "Outputs": {
+    "cognitoIndunilUserPool": {
+      "Description": "ID of Cognito user pool Indunil-User-Pool",
+      "Value": "us-east-1_WrZwPbTz1"
+    },
     "sampleInduu": {
       "Description": "ARN of Lambda function sampleInduu",
       "Value": {
@@ -39,7 +43,7 @@
         "MemorySize": 128,
         "Handler": "sample-induu.handler",
         "Timeout": 60,
-        "Runtime": "nodejs10.x",
+        "Runtime": "nodejs14.x",
         "Layers": [],
         "TracingConfig": {
           "Mode": "PassThrough"
@@ -80,7 +84,24 @@
               }
             }
           ]
-        }
+        },
+        "Policies": [
+          {
+            "PolicyName": "sampleInduuPolicy",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "cognito-idp:ListUsers"
+                  ],
+                  "Resource": "arn:aws:cognito-idp:us-east-1:318300609668:userpool/us-east-1_WrZwPbTz1"
+                }
+              ]
+            }
+          }
+        ]
       }
     }
   }
